@@ -1,4 +1,4 @@
-# NXSwap Taker (nxswap-taker)
+# NXSwap Web (nxswap-web)
 
 This is the open source front-end of NXSwap.
 
