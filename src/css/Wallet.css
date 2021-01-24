@@ -1,0 +1,175 @@
+.singlecolumn .column .cont {
+  max-width: 380px;
+}
+
+.wallet-unlock .encryptionPassphrase {
+  margin: 20px 0px 20px 0px;
+  position: relative;
+}
+
+.wallet-unlock .encryptionPassphrase input {
+  background-color: black;
+  border: 1px solid #979797;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: white;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.wallet-unlock .encryptionPassphrase .showhide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 4px;
+  margin: 17px 12px 0px 0px;
+  cursor: pointer;
+}
+
+.wallet-unlock button.unlock,
+.wallet-lock button.action,
+.wallet-forget button.action {
+  width: 100%;
+  display: block;
+  padding: 18px 12px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #1f6cf7;
+  border: 1px solid #1f6cf7;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wallet-lock .actionButton,
+.wallet-forget .actionButton {
+  margin: 30px 0px 20px 0px;
+}
+.wallet-unlock button.unlock:disabled,
+.wallet-lock button.action:disabled,
+.wallet-forget button.action:disabled {
+  background: #6d6d6d;
+  border: 1px solid #6d6d6d;
+  color: #525252;
+  cursor: not-allowed;
+}
+
+.wallet-unlock .manually,
+.wallet-lock .otheraction, 
+.wallet-forget .otheraction {
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+  padding: 4px 0px;
+  text-align: center;
+  opacity: 0.4;
+  cursor: pointer;
+  text-decoration: none;
+  color: white
+}
+
+.walletOverview {
+
+}
+
+.walletOverview .walletOverviewHead {
+  margin-bottom: 20px;
+}
+
+.walletOverview table {
+  width: 100%;
+  border: 2px solid #2b2b2b;
+  table-layout: fixed;
+}
+
+.walletOverview table tr th {
+  background: #000000;
+  color: #818181;
+  font-size: 14px;
+  text-align: left;
+  padding: 15px 20px;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+.walletOverview table tr td {
+  background: #101010;
+  border-bottom: 1px solid #2b2b2b;
+  padding: 20px 20px;
+  color: #999;
+}
+
+.walletOverview table tr th.icon {
+  width: 48px;
+  padding-right: 0px;
+}
+.walletOverview table tr th.details {
+  width: 30px;
+}
+
+.walletOverview table tr td.icon {
+  padding-right: 0px;
+}
+
+.walletOverview table tr td.icon img {
+  width: 36px;
+  height: 36px;
+  margin-left: 6px;
+}
+
+.walletOverview table tr th.name {
+  width: 180px;
+}
+
+.walletOverview table tr td.name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.walletOverview table tr td.name span {
+  display: block;
+  padding-top: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+
+.walletOverview table tr td.bal.zero {
+  opacity: 0.5;
+}
+
+.walletOverview table tr td.bal.notZero {
+  color: white;
+}
+
+
+.walletOverview table tr th.actions,
+.walletOverview table tr td.actions {
+  width: 310px;
+}
+
+.walletOverview table tr td.actions button {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  padding: 12px 12px;
+  font-size: 14px;
+  margin: 0px 4px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.walletOverview table tr td.actions button:hover {
+  opacity: 0.8;
+}
+
+.walletOverview table tr td.actions button.disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}

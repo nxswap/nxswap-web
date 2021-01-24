@@ -1,0 +1,653 @@
+.homepage {
+
+}
+
+.homepage .meta {
+  display: flex;
+}
+
+.homepage .metaMain {
+  line-height: 46px;
+}
+
+.homepage .metaSub {
+  margin-left: 70px;
+  color: rgba(255,255,255,0.7);
+  padding: 10px 0px;
+  max-width: 400px;
+  line-height: 27px;
+}
+
+.homepage .metaForm {
+  margin-left: 70px;
+  color: rgba(255,255,255,0.7);
+  padding: 10px 0px;
+}
+
+.homepage .metaForm span {
+  font-size: 13px;
+  display: block;
+}
+
+.swap .swappeerbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-top: 40px;
+}
+
+.swap .swappeerbar .peerfield {
+  flex-grow: 1;
+  flex-basis: 0;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.swap .swappeerbar .peerfield:first-of-type {
+  margin-left: 0px;
+}
+
+.swap .swappeerbar .peerfield:last-of-type {
+  margin-right: 0px;
+}
+
+.swap .swappeerbar .peerfield label {
+  display: block;
+  padding-bottom: 18px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+
+.swap .swapamountbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-top: 40px;
+}
+
+.swap .swapamountbar .amountfield {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-right: 40px;
+  position: relative;
+}
+
+.swap .swapamountbar .amountfield label {
+  display: block;
+  padding-bottom: 18px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.swap .swapamountbar .amountfield label.selected {
+  color: white;
+}
+
+.swap .swapamountbar .amountfield input[type=text].peer {
+  background-color: #060606;
+  border: 1px solid #393939;
+  outline: none;
+  font-size: 14px;
+  padding: 14px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.swap .swapamountbar .amountfield input[type=text].peer.error {
+  border-color: red;
+}
+
+.swap .swapamountbar .amountfield input[type=text].amount {
+  background-color: #060606;
+  border: 1px solid #393939;
+  outline: none;
+  font-size: 23px;
+  padding: 22px 16px 22px 100px;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  line-height: 1;
+}
+
+.swap .swapamountbar .amountfield input[type=text]:disabled {
+  opacity: 0.5;
+}
+
+.swap .swapamountbar .amountfield span.icon {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  border-right: 1px solid #393939;
+}
+
+.swap .swapamountbar .amountfield span.icon img {
+  width: 38px;
+  height: 38px;
+  margin-right: 22px;
+  margin-left: 23px;
+  margin-bottom: 14px;
+  margin-top: 15px;
+}
+
+.swap .swapamountbar .amountfield span.select {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 24px 36px 24px 36px;
+  font-size: 20px;
+  font-weight: 400;
+  border-left: 1px solid #393939;
+}
+
+.swap .swapamountbar .buttonfield {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1px;
+}
+
+.swap .swapamountbar .buttonfield button,
+.swap .swapamountbar .buttonfield a {
+  background-color: #1f6cf7;
+  border: 1px solid #1f6cf7;
+  color: white;
+  outline: 0;
+  padding: 24px 42px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.swap .swapamountbar .buttonfield button:hover,
+.swap .swapamountbar .buttonfield a:hover {
+  opacity: 0.8;
+}
+
+.swap .swapamountbar .buttonfield button:disabled,
+.swap .swapamountbar .buttonfield a.disabled {
+  opacity: 0.3;
+  border-color: black;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.swap .swapbelowamounts {
+  padding: 15px 0px 0px 4px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.swap .swapbelowamounts .balance {
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.swap .swapbelowamounts .balance.no {
+  cursor: default;
+}
+
+.swap .swapbelowamounts .balance small {
+  opacity: 0.6;
+  display: inline-block;
+  padding-right: 6px;
+  font-size: 13px;
+}
+
+.swap .swapbelowamounts .balance span {
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+.swap .swapbelowamounts .balance span.invalid {
+  background: red;
+}
+
+.swap .swapbelowamounts button.deposit {
+  padding: 4px 8px;
+  background: #363636;
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+  outline: 0;
+  opacity: 0.7;
+}
+
+.swap .swapbelowamounts button.deposit:hover {
+  opacity: 1;
+}
+
+.swapOffersHeader {
+  padding: 16px 20px;
+  background: black;
+  width: auto;
+  text-align: left;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.swapOffersHeader span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.swapOffersHeader span a.bubble {
+  background: #1470f2;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.swapOffers {
+  margin-top: 30px;
+}
+
+.swapOffersCont {
+  border: 2px solid #000000;
+}
+
+.swapOffers h3 {
+  display: block;
+  opacity: 0.6;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.swapOffers table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.swapOffers table th {
+  background: #101010;
+  color: #818181;
+  font-size: 12px;
+  text-align: left;
+  padding: 10px 10px;
+  opacity: 0.7;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+.swapOffers table td {
+  background: #101010;
+  padding: 10px 10px;
+  color: #999;
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.swapOffers table td.amount {
+  background: #000000;
+}
+
+.trackSwaps {
+  margin-bottom: 50px;
+}
+
+.trackSwaps:last-of-type {
+  margin-bottom: 0px;
+}
+
+.trackSwaps .trackSwapsHeader {
+  margin-bottom: 20px;
+}
+
+.trackSwaps .swapBars {
+  border: 2px solid black;
+}
+
+.swapBar {
+  background: #1f1f1f;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  padding: 10px 12px 10px 12px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+.swapBar.swapRows {
+  flex-direction: column;
+  align-items: inherit;
+}
+
+.swapBar .swapRow {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swapBar:last-of-type {
+  border-bottom: 0px;
+}
+
+.swapBar .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  padding: 0px 16px;
+}
+
+.swapBar .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.swapBar .profile span {
+  display: block;
+  padding: 4px 5px;
+  border-radius: 8px;
+  font-size: 10px;
+  background: black;
+}
+
+.swapBar .currencySelect {
+  display: flex;
+  flex-direction: row;
+  padding: 18px 14px;
+  margin-right: 24px;
+  align-items: left;
+}
+
+.swapBar .currencySelect span {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.swapBar .currencySelect span small {
+  display: block;
+  margin-top: 10px;
+  opacity: 0.6;
+  font-weight: normal;
+}
+
+.swapBar .currencySelect img {
+  width: 34px;
+  height: 34px;
+  margin-left: 22px;
+}
+
+.swapBar .metaCol {
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 7px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+}
+
+.swapBar .metaCol small {
+  text-transform: uppercase;
+  font-size: 11px;
+  opacity: 0.7;
+  padding-bottom: 8px;
+}
+
+.swapBar .metaCol span {
+  font-size: 14px;
+  padding-left: 1px;
+}
+
+.swapBar .metaCol span.small {
+  font-size: 11px;
+  padding: 3px 4px;
+  border-radius: 3px;
+}
+
+.swapBar .metaCol span.small.highlight {
+  background: white;
+  color:black;
+  cursor: pointer;
+}
+
+
+.swapBar .metaCol span.small i {
+  font-size: 11px;
+  opacity: 0.7;
+  display: inline-block;
+  padding-right: 4px;
+}
+
+.swapBar .metaCol span.small:first-of-type {
+  margin-top: -4px;
+}
+
+.swapBar .metaCol span.small:last-of-type {
+  margin-bottom: 0;
+}
+
+.swapBar .currencyArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  padding: 0px 8px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.swapBar .currencyArrow img {
+  width: 30px;
+}
+
+.swapBar .flexGrower {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+.swapBar .currencyInput {
+  margin-left: 10px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.swapBar .currencyInput span {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.swapBar .currencyInput span small {
+  display: block;
+  opacity: 0.7;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.swapBar .currencyInput input[type=text] {
+  background-color: #121212;
+  border: 1px solid #2e2e2e;
+  outline: none;
+  font-size: 17px;
+  padding: 14px 16px 14px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  line-height: 1;
+}
+
+
+.swapBar .balance {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 20px;
+  margin: 0px 20px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.swapBar .balance small {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.swapBar .balance span {
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.swapBar .deposit {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swapBar .action button.requestSwap {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: white;
+  outline: 0;
+  padding: 12px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.swapBar .action button.requestSwap:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.swapBar .action button.trackSwap {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: white;
+  outline: 0;
+  padding: 12px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.swapBar .action button.trackSwap:hover {
+  opacity: 0.8;
+}
+
+.swapBar .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  padding: 0px 20px;
+}
+
+.swapBar .action span.info {
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.swapBar .action button.requestSwap small {
+  display: block;
+  font-size: 10px;
+  opacity: 0.5;
+  padding-bottom: 8px;
+  z-index: 10;
+}
+
+.swapBar .action button.requestSwap span {
+  display: block;
+  z-index: 10;
+  opacity: 0.99;
+}
+
+.swapBar .action button.requestSwap:hover {
+  background-color: rgba(57,57,57,0.4);
+}
+
+.swapBar .action button.requestSwap i.expiry {
+  opacity: 0.9;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  z-index: 0;
+  transition: bottom 1s ease 0s;
+}
+
+.swapBar .action button.requestSwap i.requesting {
+  opacity: 0.5;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swapBar .action button.requestSwap i.requesting .lds-ring {
+  width: 38px;
+  height: 38px;
+  opacity: 1;
+}
+
+.swapBar .action button.requestSwap i.requesting .lds-ring div {
+  width: 32px;
+  height: 32px;
+  border-width: 3px;
+  margin: 3px;
+}

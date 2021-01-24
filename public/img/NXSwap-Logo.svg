@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="23px" viewBox="0 0 108 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Log-in" transform="translate(-143.000000, -121.000000)">
+            <g id="Group" transform="translate(143.000000, 121.000000)">
+                <g id="pentagon" fill="#1470F2" fill-rule="nonzero">
+                    <polygon id="Path" points="11.3999999 0 22.7999997 8.36047195 18.4455872 21.8879997 4.35441247 21.8879997 0 8.36047195"></polygon>
+                </g>
+                <text id="NXSwap" font-family="HelveticaNeue, Helvetica Neue" font-size="18.8099998" font-weight="normal" fill="#878787">
+                    <tspan x="36" y="19">NXSwap</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

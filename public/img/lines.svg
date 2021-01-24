@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="646px" viewBox="0 0 1280 646" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Lines</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Lines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.1" stroke-linecap="square">
+        <line x1="331.5" y1="651.75" x2="1286" y2="179.25" id="Line-6" stroke="#979797" transform="translate(808.500000, 415.750000) scale(-1, -1) translate(-808.500000, -415.750000) "></line>
+        <line x1="524.25" y1="791.5" x2="1478.75" y2="319" id="Line-5" stroke="#979797" transform="translate(1001.250000, 555.500000) scale(-1, -1) translate(-1001.250000, -555.500000) "></line>
+        <line x1="524.25" y1="472.5" x2="1478.75" y2="0" id="Line-4" stroke="#979797" transform="translate(1001.250000, 236.500000) scale(-1, 1) translate(-1001.250000, -236.500000) "></line>
+        <line x1="-5.5" y1="651.75" x2="949" y2="179.25" id="Line-3" stroke="#979797" transform="translate(471.500000, 415.750000) scale(1, -1) translate(-471.500000, -415.750000) "></line>
+        <line x1="-198.25" y1="791.5" x2="756.25" y2="319" id="Line-2" stroke="#979797" transform="translate(278.750000, 555.500000) scale(1, -1) translate(-278.750000, -555.500000) "></line>
+        <line x1="-198.25" y1="472.5" x2="756.25" y2="0" id="Line-1" stroke="#979797"></line>
+    </g>
+</svg>

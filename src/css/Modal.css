@@ -1,0 +1,485 @@
+.modalWindowOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 800;
+  padding: 40px;
+}
+
+.modalWindow {
+  background: #232323;
+  border: 1px solid #333333;
+  padding: 40px 40px;
+  width: 500px;
+  max-width: 100%;
+  margin: 20px;
+  z-index: 900;
+  overflow-y: scroll;
+  max-height: calc(100vh - 200px);
+}
+
+.modalWindow.wide {
+  width: 600px;
+}
+
+.modalWindow .modalHeader {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalWindow .modalHeader h3 {
+  display: block;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.modalWindow .modalHeader h3 small {
+  display: block;
+  padding-top: 9px;
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: normal;
+}
+
+.modalWindow .modalHeader img {
+  width: 40px;
+  max-width: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.modalWindow .modalHeader span.close {
+  width: 40px;
+  max-width: 40px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.modalWindow .modalHeader span.close:hover {
+  opacity: 0.8;
+}
+
+.modalWindow .modalHeader span.close img {
+  width: 24px;
+  height: 24px;
+  margin: 0px;
+}
+
+.modalWindow .modalText {
+  line-height: 1.4em;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modalWindow .modalText p {
+  margin-bottom: 14px;
+  line-height: 22px;
+}
+
+.modalWindow .modalText p a {
+  color: black;
+  text-decoration: none;
+}
+
+.modalWindow .modalText .highlight {
+  display: inline-block;
+  background: yellow;
+  color: black;
+  margin: 0px 2px;
+  padding: 0px 5px;
+  border-radius: 4px;
+}
+
+.modalWindow .modalText .highlight.big {
+  padding: 5px 8px;
+}
+
+.modalWindow .modalText p:last-of-type {
+  margin-bottom: 0px;
+}
+
+.modalWindow .modalInput {
+  margin-bottom: 20px;
+}
+
+.modalWindow .modalInput label,
+.modalWindow small.label {
+  font-weight: 500;
+  padding: 4px 0px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalWindow .modalInput label small {
+  font-weight: normal;
+  display: inline-block;
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+.modalWindow .modalInput label.noCurs {
+  cursor: default;
+}
+
+.modalWindow .modalInput label span.labelAction,
+.modalWindow small.label span.labelAction {
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+
+.modalWindow .modalInput label span.labelAction:hover,
+.modalWindow small.label span.labelAction:hover {
+  opacity: 0.7;
+}
+
+.modalWindow .modalInput label span.labelAction.active,
+.modalWindow small.label span.labelAction.active {
+  opacity: 1;
+}
+
+.modalWindow .modalInput label span.labelError {
+  font-weight: 500;
+  font-size: 13px;
+  cursor: default;
+  color: red;
+}
+
+.modalWindow .modalInput {
+  position: relative;
+}
+
+.modalWindow .modalInput.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.modalWindow .modalInput .nobold {
+  font-weight: normal;
+  margin-left: 8px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.modalWindow .modalInput input[type=text] {
+  background-color: black;
+  border: 1px solid #363636;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: white;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.modalWindow .modalInput input[type=text].error {
+  border: 1px solid red;
+}
+
+.modalWindow .modalInput input[type=text]:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  border: 1px solid black;
+}
+
+.modalWindow .modalInput .inputAction {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modalWindow .modalInput .inputAction .copy {
+  padding: 14px 18px;
+}
+
+.modalWindow .modalInput .inputAction .copy:hover {
+  opacity: 0.8;
+}
+
+.modalWindow .modalInput .inputAction .amountCurr {
+  display: block;
+  padding: 18px 24px 19px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-left: 1px solid #393939;
+  cursor: default;
+}
+
+.modalWindow .modalInput .inputAction .amountMax {
+  display: block;
+  padding: 19px 8px;
+  font-size: 12px;
+  margin-right: 8px;
+  opacity: 0.45;
+}
+
+.modalWindow .modalInput .inputAction .amountMax.active,
+.modalWindow .modalInput .inputAction .amountMax:hover {
+  opacity: 1;
+}
+
+.modalWindow .modalContent {
+  margin-top: 20px;
+}
+
+.modalWindow .modalLink {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.modalWindow .modalLink span,
+.modalWindow .modalLink a {
+  font-size: 14px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.modalWindow .modalTable {
+  margin-top: 20px;
+}
+
+.modalWindow .modalTable table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.modalWindow .modalTable table th {
+  background: #000000;
+  color: #818181;
+  font-size: 13px;
+  text-align: left;
+  padding: 12px 12px;
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.modalWindow .modalTable table td {
+  background: #101010;
+  padding: 10px 10px;
+  font-size: 13px;
+  color: #999;
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.modalWindow .modalTable table.prevAddresses th.path {
+  width: 110px;
+}
+
+.modalWindow .modalTable table.prevAddresses .path {
+  font-size: 13px;
+}
+
+.modalWindow .modalTable table.utxos th.checkbox {
+  width: 15px;
+  text-align: center;
+}
+
+.modalWindow .modalTable table.utxos td.checkbox {
+  text-align: center;
+}
+
+.modalWindow .modalTable table.utxos td.address {
+  font-size: 12px;
+}
+
+.modalWindow .modalTable table.utxos td.address small {
+  font-size: 9px;
+  opacity: 0.5;
+  padding-top: 5px;
+  display: block;
+}
+
+.modalWindow .modalTable table.utxos td.value {
+  font-size: 12px;
+  text-align: right;
+}
+
+.modalWindow .modalTable table.utxos th.value {
+  width: 100px;
+  text-align: right;
+}
+
+.modalWindow .modalTable table.transactions td {
+  font-size: 12px;
+}
+.modalWindow .modalTable table.transactions th.date {
+  width: 60px;
+}
+
+.modalWindow .modalTable table.transactions th.type {
+  width: 50px;
+}
+
+.modalWindow .modalTable table.transactions th.adj {
+  width: 120px;
+  text-align: right;
+}
+
+.modalWindow .modalTable table.transactions td.adj {
+  text-align: right;
+}
+
+.modalWindow .modalTable table.transactions td.adj.neg {
+  color: red;
+}
+
+.modalWindow .modalTable table.transactions td.adj.pos {
+  color: green;
+}
+
+.modalWindow .customSelect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalWindow .customSelect .customSelectOption {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  padding: 14px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  border: 2px solid #4f4f4f;
+  cursor: pointer;
+}
+
+.modalWindow .customSelect .customSelectOption:last-of-type {
+  margin-right: 0;
+}
+
+.modalWindow .customSelect .customSelectOption.selected {
+  background: #000000;
+  border-color: #004494;
+}
+
+.modalWindow .customSelect .customSelectOption small {
+  display: block;
+  padding-top: 6px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.modalWindow span.customCheck {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid #666;
+  cursor: pointer;
+}
+
+.modalWindow span.customCheck.textRight {
+  margin-right: 9px;
+}
+
+.modalWindow span.customCheck.selected {
+  background: url(/img/checked.svg);
+  background-size: contain;
+  border-color: #006dfa;
+}
+
+.modalWindow .modalAction {
+  display: flex;
+}
+
+.modalWindow .modalAction button {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: block;
+  padding: 18px 12px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #1f6cf7;
+  border: 1px solid #1f6cf7;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.modalWindow .modalAction button:disabled {
+  background: #6d6d6d;
+  border: 1px solid #6d6d6d;
+  color: #525252;
+  cursor: not-allowed;
+}
+
+.modalWindow .modalAction button.confirm {
+  background-color: #009a37;
+  border: 1px solid #009a37;
+}
+
+.modalWindow .modalAction button.cancel {
+  background-color: red;
+  border: 1px solid red;
+}
+
+.modalWindow .modalAction button:first-of-type {
+  margin-left: 0px;
+}
+
+.modalWindow .modalAction button:last-of-type {
+  margin-right: 0px;
+}
+
+.modalWindow .modalFlexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modalWindow .modalFlexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalWindow .modalFlexColumn img.currencyIcon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.modalWindow .modalFlexColumn span.label {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+.modalWindow .modalFlexColumn span.amount {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.modalWindow .modalFlexColumn span.currencyName {
+  font-size: 14px;
+  opacity: 0.4;
+  margin-bottom: 10px;
+}
+
+.modalWindow .modalFlexColumn img.arrowBetween {
+  height: 50px;
+}

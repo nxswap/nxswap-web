@@ -1,0 +1,71 @@
+.currencySelectorWindowOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 800;
+  padding: 40px;
+}
+
+.currencySelector {
+  background: #181818;
+  border: 1px solid #373737;
+  padding: 15px;
+  width: 1000px;
+}
+
+.currencySelector .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.currencySelector .header h3 {
+  font-size: 16px;
+}
+
+.currencySelector .currencies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.currencySelector .currencies .currency {
+  flex: 1 0 10%;
+  border: 1px solid #373737;
+  padding: 20px;
+  height: 100px;
+  width: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.currencySelector .currencies .currency:hover {
+  background: #373737;
+}
+
+.currencySelector .currencies .currency img.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.currencySelector .currencies .currency span.name {
+  margin-top: 12px;
+  display: block;
+}
+
+.currencySelector .currencies .currency small.badge {
+  display: block;
+  padding-top: 6px;
+  font-size: 12px;
+  opacity: 0.7;
+}

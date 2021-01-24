@@ -1,0 +1,193 @@
+.splitcolumn .column .cont {
+  max-width: 380px;
+}
+
+.get-started-create .encryptionPassphrase {
+  margin: 20px 0px 20px 0px;
+  position: relative;
+}
+
+.get-started-create .encryptionPassphrase input {
+  background-color: black;
+  border: 1px solid #979797;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: white;
+  width: 100%;
+  display: block;
+  max-width: calc(100% - 42px); /* - horizontal padding + border */
+  outline: none;
+}
+
+.get-started-create .encryptionPassphrase .showhide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 4px;
+  margin: 17px 12px 0px 0px;
+  cursor: pointer;
+}
+
+.get-started-create .encryptionPassphrase .passphraseScore {
+  height: 3px;
+  width: 100%;
+}
+
+.get-started-create .encryptionPassphrase .passphraseScore span {
+  content: ' ';
+  height: 3px;
+  display: block;
+}
+
+.get-started-create .encryptionPassphrase .passphraseScore span.score0,
+.get-started-create .encryptionPassphrase .passphraseScore span.score1 {
+  background: red;
+}
+
+.get-started-create .encryptionPassphrase .passphraseScore span.score2,
+.get-started-create .encryptionPassphrase .passphraseScore span.score3 {
+  background: orange;
+}
+
+.get-started-create .encryptionPassphrase .passphraseScore span.score4 {
+  background: green;
+}
+
+.get-started-create .encryptionPassphrase .passphraseSuggest {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px 0px 3px;
+  font-weight: 500;
+  color: red;
+}
+
+.get-started-create .encryptionPassphrase .passphraseSuggest.show {
+  display: block;
+}
+
+.get-started-create button.create,
+.get-started-create a.download,
+.get-started-create button.copy-clipboard {
+  width: 100%;
+  display: block;
+  padding: 18px 12px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #1f6cf7;
+  border: 1px solid #1f6cf7;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.get-started-create a.download {
+  background-color: #009a37;
+  border: 1px solid #009a37;
+  width: calc(100% - 24px);
+}
+
+.get-started-create button.create:disabled {
+  background: #6d6d6d;
+  border: 1px solid #6d6d6d;
+  color: #525252;
+  cursor: not-allowed;
+}
+
+.get-started-create .downloadRecoveryKey {
+  margin: 18px 0px;
+}
+
+.get-started-create .downloadRecoveryKey .manually {
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+  padding: 4px 0px;
+  text-align: center;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.get-started-create .manualRecoveryKey {
+  margin-top: 10px;
+}
+
+.get-started-create .manualRecoveryKey textarea {
+  padding: 10px;
+  width: calc( 100% - 20px - 2px);
+  background-color: black;
+  border: 1px solid #979797;
+  font-size: 14px;
+  color: white;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+
+.get-started-create button.copy-clipboard {
+  font-size: 12px;
+  padding: 12px;
+  margin-bottom: 30px;
+}
+
+/** Get Started Load **/
+
+.get-started-load .dropzone.disabled {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.2;
+}
+
+.get-started-load .dropzonecont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 20px;
+  margin-top: 20px;
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: #2767fd;
+  border-style: dashed;
+  color: #bdbdbd;
+  outline: none;
+  transition: border .24s ease-in-out;
+  text-align: center;
+  line-height: 28px;
+}
+
+.get-started-load .dropzonecont.active {
+  border-color: orange;
+}
+
+.get-started-load .dropzonecont.success {
+  border-color: red;
+}
+
+.get-started-load .manually {
+  font-size: 13px;
+  display: block;
+  margin-top: 14px;
+  padding: 4px 0px;
+  text-align: center;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+
+.get-started-load .manualLoad {
+  margin-top: 20px;
+}
+
+.get-started-load .manualLoad textarea {
+  padding: 10px;
+  width: calc( 100% - 20px - 2px);
+  background-color: black;
+  border: 1px solid #979797;
+  font-size: 14px;
+  color: white;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
