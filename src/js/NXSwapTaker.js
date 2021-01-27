@@ -1,4 +1,4 @@
-import { LocalStorage, RecoveryKey, Wallet, Negotiator, PBMsgr, NXMeta, UserAuthObject, SUPPORTED_CURRENCIES } from '@nxswap/nxswap-js';
+import { LocalStorage, RecoveryKey, Wallet, Negotiator, PBMsgr, NXMeta, UserAuthObject, SUPPORTED_CURRENCIES } from '@nxswap/nxswap-core';
 
 
 
