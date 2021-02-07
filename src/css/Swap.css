@@ -87,6 +87,18 @@
   cursor: pointer;
 }
 
+.swap .swapamountbar .amountfield label span {
+  float: right;
+}
+
+.swap .swapamountbar .amountfield label span.hidden {
+  display: none;
+}
+
+.swap .swapamountbar .amountfield label span.error {
+  color: red;
+}
+
 .swap .swapamountbar .amountfield label.selected {
   color: white;
 }
