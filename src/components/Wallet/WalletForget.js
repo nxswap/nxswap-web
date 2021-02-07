@@ -21,9 +21,9 @@ class WalletForget extends React.Component {
     }
 
     return (
-      <div className="singlecolumn">
+      <div className="singlecolumn align-c just-c">
         <div className="column wallet-lock">
-          <div className="cont wallet-unlock">
+          <div className="cont cont-c wallet-unlock">
             <h2>Confirm Forget Wallet?</h2>
             <span className="desc">Once you have forgotten your Wallet, you will need to re-load it using your Recovery Key.</span>
             <div className="actionButton">

@@ -513,7 +513,7 @@ class SwapForm extends React.Component {
 
 		return (
 			<>
-			<div className="singlecolumn">
+			<div className="singlecolumn just-c">
         {this.type === "request" && this.state.showHomeHeader && (
 				<div className="homepage">
 					<div className="meta">

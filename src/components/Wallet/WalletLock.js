@@ -24,9 +24,9 @@ class WalletLock extends React.Component {
     }
 
     return (
-      <div className="singlecolumn">
+      <div className="singlecolumn align-c just-c">
         <div className="column wallet-lock">
-          <div className="cont wallet-unlock">
+          <div className="cont cont-c wallet-unlock">
             <h2>Confirm Lock Wallet?</h2>
             <span className="desc">Once your Wallet is locked, you will need to re-enter your passphrase to use it again.</span>
             <div className="actionButton">

@@ -187,12 +187,12 @@ class GetStartedMain extends React.Component {
     }
 
     return (
-      <div className="splitcolumn">
-        <div className="column">
+      <div className="splitcolumn align-c">
+        <div className="column flex align-c">
           {createColumn}
         </div>
         <div className="divider"></div>
-        <div className="column">
+        <div className="column flex align-c">
           <GetStartedLoad />
         </div>
       </div>

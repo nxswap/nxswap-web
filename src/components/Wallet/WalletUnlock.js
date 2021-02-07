@@ -84,9 +84,9 @@ class WalletUnlock extends React.Component {
     let showHideType = this.state.showPassphrase ? "text" : "password";
 
     return (
-      <div className="singlecolumn">
+      <div className="singlecolumn align-c just-c">
         <div className="column">
-          <div className="cont wallet-unlock">
+          <div className="cont cont-c wallet-unlock">
             <h2>Your Wallet Is Locked</h2>
             <span className="desc">Your Recovery Key is loaded into your browsers local storage, however it is stored encrypted.</span>
             <span className="desc">You'll need to enter the passphrase you set when you created your Recovery Key.</span>

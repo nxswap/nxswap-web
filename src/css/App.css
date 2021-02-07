@@ -154,10 +154,16 @@
   flex-grow: 1;
   max-width: 1200px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
+.singlecolumn.just-c {
+  justify-content: center;
+}
+
+.singlecolumn.align-c {
+  align-items: center;
+}
 
 
 .splitcolumn {
@@ -165,6 +171,10 @@
   max-width: 1200px;
   display: flex;
   height: 100%;
+}
+
+.splitcolumn.align-c {
+  align-items: center;
 }
 
 .singlecolumn.top,
@@ -193,12 +203,18 @@
   display: flex;
 }
 
+.splitcolumn .column.align-c {
+  justify-content: center;
+}
+
 .splitcolumn .column.marg {
   margin: 0px 10px;
 }
 .splitcolumn .column.outline {
   border: 1px solid #000000;
 }
+
+
 
 .desc {
   color: white;
