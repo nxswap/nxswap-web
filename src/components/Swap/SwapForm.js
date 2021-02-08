@@ -1,6 +1,6 @@
 import React from 'react';
 import { WalletContext } from '../../contexts/WalletContext';
-import { Negotiator, NXMeta, UserAuthObject, SUPPORTED_CURRENCIES } from '../../js/NXSwapTaker';
+import { Wallet, Negotiator, NXMeta, UserAuthObject, SUPPORTED_CURRENCIES } from '../../js/NXSwapTaker';
 
 import '../../css/Swap.css';
 import CurrencySelector from './CurrencySelector';
@@ -41,6 +41,13 @@ class SwapForm extends React.Component {
 			showCurrencySelector: false,
 			showCurrencySelectorFor: false
 		})
+	}
+
+	getMaximumSwapAmount(currency) {
+		let max = Wallet.returnMaxSwapAmount(currency);
+		if( ! max ) return false;
+
+		this.onChangeSwapAmount(max);
 	}
 
 	onSelectCurrency(currency) {
@@ -339,7 +346,7 @@ class SwapForm extends React.Component {
 					</div>
 					{userAuthorised && (
 						<div className="swapbelowamounts">
-						<div className="balance" onClick={() => this.onChangeSwapAmount(currentBalance.available.formatted)}>
+						<div className="balance">
 							<small>{depositCurrency} Available</small>
 							{this.state.swapAmount > currentBalance.available.float ? (
 								<span className="invalid">{currentBalance.available.formatted}</span>
@@ -352,6 +359,7 @@ class SwapForm extends React.Component {
 							<span>Pending</span> {currentBalance.pending.formatted}
 						</div>
 						)}
+						<button className="deposit" onClick={() => this.getMaximumSwapAmount(depositCurrency)}>Max</button>
 						<button className="deposit" onClick={() => this.showDepositModal(depositCurrency)}>Deposit {depositCurrency}</button>
 					</div>
 					)}
