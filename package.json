@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@nxswap/nxswap-core": "^0.1.1",
+    "@nxswap/nxswap-core": "^0.1.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -16,7 +16,8 @@
     "react-dropzone": "^10.2.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
-    "trezor-connect": "^8.1.1",
+    "trezor-connect": "^8.1.20",
+    "typescript": "^4.1.3",
     "ws": "^7.4.2",
     "zxcvbn": "^4.4.2"
   },
