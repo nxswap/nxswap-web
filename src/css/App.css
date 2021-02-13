@@ -66,9 +66,9 @@
 
 #header nav a.featured
 {
-  border-radius: 4px;
   background: #1470f2;
   color: white;
+  border-radius: 6px;
 }
 
 #header nav a.twitter

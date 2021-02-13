@@ -114,6 +114,9 @@
   color: white;
   line-height: 1;
   margin-bottom: 30px;
+  border-radius: 7px;
+  background: rgb(33, 36, 41);
+  border-radius: 7px;
 }
 
 .swap .swapamountbar .amountfield input[type=text].peer.error {
@@ -133,7 +136,7 @@
 }
 
 .swap .swapamountbar .amountfield input[type=text]:disabled {
-  opacity: 0.5;
+  opacity: 0.26;
 }
 
 .swap .swapamountbar .amountfield span.icon {
