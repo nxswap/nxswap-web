@@ -11,7 +11,7 @@ import { useWalletContext } from "../contexts/WalletContext.js"
 function Header() {
 	return (
 		<div id="header">
-			<div className="max-width">
+			<div className="max-width headerBottom">
 				<div className="logo">
 					<Link to="/"></Link>
 				</div>

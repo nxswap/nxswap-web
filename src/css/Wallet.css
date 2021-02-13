@@ -88,8 +88,11 @@
 
 .walletOverview table {
   width: 100%;
-  border: 2px solid #2b2b2b;
+  border: 1px solid #393939;
   table-layout: fixed;
+  border-radius: 7px;
+    overflow: hidden;
+    border-bottom: none;
 }
 
 .walletOverview table tr th {
@@ -98,12 +101,12 @@
   font-size: 14px;
   text-align: left;
   padding: 15px 20px;
-  border-bottom: 2px solid #2b2b2b;
+  border-bottom: 1px solid #393939;
 }
 
 .walletOverview table tr td {
-  background: #101010;
-  border-bottom: 1px solid #2b2b2b;
+  background: rgb(33, 36, 41);
+  border-bottom: 1px solid #393939;
   padding: 20px 20px;
   color: #999;
 }
@@ -145,7 +148,7 @@
 
 
 .walletOverview table tr td.bal.zero {
-  opacity: 0.5;
+  color: #ffffff36;
 }
 
 .walletOverview table tr td.bal.notZero {

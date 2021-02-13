@@ -279,7 +279,7 @@ class SwapForm extends React.Component {
 					<div className="meta">
 						<div className="metaMain">
 							<h1>Propose An Atomic Swap</h1>
-							<h2>Swap directly with a known peer!</h2>
+							<h4 class="subHeading">Swap directly with a known peer!</h4>
 						</div>
             <div className="metaSub">
 							<span>Trade directly with someone you know without having to trust them. No trading fees, no middle man, no risks.</span>

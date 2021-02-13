@@ -11,7 +11,7 @@
 }
 
 .homepage .metaSub {
-  margin-left: 70px;
+  margin-left: 110px;
   color: #5a5a5a;
   padding: 10px 0px;
   max-width: 400px;
@@ -67,7 +67,7 @@
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .swap .swapamountbar .amountfield {
@@ -105,7 +105,7 @@
 
 .swap .swapamountbar .amountfield input[type=text].peer {
   background-color: #060606;
-  border: 1px solid #ffffff;
+  border: 1px solid #393939;
   outline: none;
   font-size: 14px;
   padding: 16px 16px;
