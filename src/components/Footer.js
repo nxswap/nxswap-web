@@ -10,6 +10,8 @@ class Footer extends React.Component {
 			<div id="footer">
 				<div className="max-width">
 					<div className="left">
+						<Link to="/request">Request A Swap</Link>
+						<span>|</span>
 						<Link to="/propose">Propose A Swap</Link>
 					</div>
 					<div className="right">
