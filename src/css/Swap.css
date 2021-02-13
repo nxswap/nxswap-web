@@ -133,6 +133,7 @@
   color: white;
   line-height: 1;
   background: rgb(33, 36, 41);
+  border-radius: 7px;
 }
 
 .swap .swapamountbar .amountfield input[type=text]:disabled {
