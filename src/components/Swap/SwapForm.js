@@ -309,7 +309,7 @@ class SwapForm extends React.Component {
               {this.type === "propose" && (
                 <>
                 <label>Propose Swap To <span className={`${(this.state.peerIDError ? ('error') : ('hidden'))}`}>({this.state.peerIDErrorText})</span></label>
-                <input type="text" className={`peer ${(this.state.peerIDError ? ('error') : false)}`} placeholder="Your Peers Public Key" onChange={(event) => this.onChangePeerID(event)} disabled={userAuthorised ? false : true} />
+                <input type="text" autoFocus className={`peer ${(this.state.peerIDError ? ('error') : false)}`} placeholder="Your Peers Public Key" onChange={(event) => this.onChangePeerID(event)} disabled={userAuthorised ? false : true} />
                 </>
               )}
 							<label className={this.state.editForAmount ? 'selected' : ''}>For</label>

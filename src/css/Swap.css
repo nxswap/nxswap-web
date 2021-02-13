@@ -119,6 +119,11 @@
   border-radius: 7px;
 }
 
+.swap .swapamountbar .amountfield input[type=text].peer:focus {
+  border: 1px solid white;
+}
+
+
 .swap .swapamountbar .amountfield input[type=text].peer.error {
   border-color: red;
 }
