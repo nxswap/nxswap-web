@@ -333,7 +333,7 @@
 }
 
 .swapBar {
-  background: #1f1f1f;
+  background: rgb(33, 36, 41);
   flex-grow: 1;
   display: flex;
   flex-direction: row;
@@ -344,6 +344,7 @@
   padding: 10px 12px 10px 12px;
   box-sizing: border-box;
   border-bottom: 1px solid black;
+  border-radius: 7px;
 }
 
 .swapBar.swapRows {
@@ -582,7 +583,7 @@
 
 .swapBar .action button.trackSwap {
   background-color: transparent;
-  border: 1px solid #000;
+  border: 1px solid #393939;
   color: white;
   outline: 0;
   padding: 12px 18px;
