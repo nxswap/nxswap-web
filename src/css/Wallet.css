@@ -108,7 +108,7 @@
   background: rgb(33, 36, 41);
   border-bottom: 1px solid #393939;
   padding: 20px 20px;
-  color: #999;
+  color: white;
 }
 
 .walletOverview table tr th.icon {
@@ -134,7 +134,7 @@
 }
 
 .walletOverview table tr td.name {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -143,7 +143,7 @@
   padding-top: 8px;
   font-size: 13px;
   font-weight: 500;
-  opacity: 0.7;
+  color: #5c5c5c;
 }
 
 
@@ -162,7 +162,7 @@
 }
 
 .walletOverview table tr td.actions button {
-  border: 1px solid white;
+  border: 1px solid #393939;
   background: none;
   color: white;
   padding: 12px 12px;
@@ -170,6 +170,7 @@
   margin: 0px 4px;
   cursor: pointer;
   outline: 0;
+  border-radius: 7px;
 }
 
 .walletOverview table tr td.actions button:hover {
